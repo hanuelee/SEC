@@ -32,11 +32,11 @@ Partial Class Form3
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(204, 138)
+        Me.Label1.Location = New System.Drawing.Point(115, 135)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(308, 111)
+        Me.Label1.Size = New System.Drawing.Size(500, 111)
         Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Good!"
+        Me.Label1.Text = "Success..."
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form3

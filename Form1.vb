@@ -9,13 +9,6 @@
     End Sub
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
-        TextBox1.Clear()
-        Me.Hide()
-        Form3.Show()
-        Threading.Thread.Sleep(1000)
-        Form3.Close()
-        Form2.Show()
-
 
         If TextBox1.Text = (";E?") Then
             TextBox1.Clear()
@@ -23,7 +16,7 @@
             Form4.Show()
             Threading.Thread.Sleep(1000)
             Form4.Close()
-            Form1.Show()
+            Me.Show()
         Else
             If Not TableTableAdapter1.Login(TextBox1.Text, TextBox1.Text) = Nothing Then
                 TextBox1.Clear()
@@ -31,14 +24,14 @@
                 Form3.Show()
                 Threading.Thread.Sleep(1000)
                 Form3.Close()
-                Form1.Show()
+                Me.Show()
             Else
                 TextBox1.Clear()
                 Me.Hide()
-                Form3.Show()
+                Form7.Show()
                 Threading.Thread.Sleep(1000)
-                Form3.Close()
-                Form1.Show()
+                Form7.Close()
+                Form2.Show()
             End If
         End If
     End Sub

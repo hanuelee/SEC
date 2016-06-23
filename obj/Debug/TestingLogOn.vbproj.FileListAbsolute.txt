@@ -41,3 +41,17 @@ C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\bin\Debug\TestingLogOn.exe.config
 C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Debug\TestingLogOn.exe
 C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Debug\TestingLogOn.xml
 C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Debug\TestingLogOn.pdb
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Debug\TestingLogOn.vbprojResolveAssemblyReference.cache
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Debug\TestingLogOn.Form1.resources
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Debug\TestingLogOn.Form2.resources
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Debug\TestingLogOn.Form3.resources
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Debug\TestingLogOn.Form4.resources
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Debug\TestingLogOn.Form5.resources
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Debug\TestingLogOn.Form7.resources
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Debug\TestingLogOn.Resources.resources
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Debug\TestingLogOn.vbproj.GenerateResource.Cache
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\bin\Debug\Database1.mdf
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\bin\Debug\Database1_log.ldf
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\bin\Debug\TestingLogOn.exe
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\bin\Debug\TestingLogOn.pdb
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\bin\Debug\TestingLogOn.xml
