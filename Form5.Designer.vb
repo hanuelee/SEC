@@ -25,24 +25,24 @@ Partial Class Form5
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form5))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.IdcheckDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FullnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AttendDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Database1DataSet = New TestingLogOn.Database1DataSet()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Database1DataSet = New TestingLogOn.Database1DataSet()
         Me.TableTableAdapter = New TestingLogOn.Database1DataSetTableAdapters.TableTableAdapter()
-        Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
-        Me.IdcheckDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FullnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AttendDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DataGridView1
@@ -56,6 +56,39 @@ Partial Class Form5
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(345, 491)
         Me.DataGridView1.TabIndex = 0
+        '
+        'IdcheckDataGridViewTextBoxColumn
+        '
+        Me.IdcheckDataGridViewTextBoxColumn.DataPropertyName = "idcheck"
+        Me.IdcheckDataGridViewTextBoxColumn.HeaderText = "idcheck"
+        Me.IdcheckDataGridViewTextBoxColumn.Name = "IdcheckDataGridViewTextBoxColumn"
+        '
+        'FullnameDataGridViewTextBoxColumn
+        '
+        Me.FullnameDataGridViewTextBoxColumn.DataPropertyName = "full_name"
+        Me.FullnameDataGridViewTextBoxColumn.HeaderText = "full_name"
+        Me.FullnameDataGridViewTextBoxColumn.Name = "FullnameDataGridViewTextBoxColumn"
+        '
+        'AttendDataGridViewTextBoxColumn
+        '
+        Me.AttendDataGridViewTextBoxColumn.DataPropertyName = "attend"
+        Me.AttendDataGridViewTextBoxColumn.HeaderText = "attend"
+        Me.AttendDataGridViewTextBoxColumn.Name = "AttendDataGridViewTextBoxColumn"
+        '
+        'TableBindingSource
+        '
+        Me.TableBindingSource.DataMember = "Table"
+        Me.TableBindingSource.DataSource = Me.BindingSource1
+        '
+        'BindingSource1
+        '
+        Me.BindingSource1.DataSource = Me.Database1DataSet
+        Me.BindingSource1.Position = 0
+        '
+        'Database1DataSet
+        '
+        Me.Database1DataSet.DataSetName = "Database1DataSet"
+        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Button3
         '
@@ -115,42 +148,9 @@ Partial Class Form5
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
-        'TableBindingSource
-        '
-        Me.TableBindingSource.DataMember = "Table"
-        Me.TableBindingSource.DataSource = Me.BindingSource1
-        '
-        'Database1DataSet
-        '
-        Me.Database1DataSet.DataSetName = "Database1DataSet"
-        Me.Database1DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
         'TableTableAdapter
         '
         Me.TableTableAdapter.ClearBeforeFill = True
-        '
-        'BindingSource1
-        '
-        Me.BindingSource1.DataSource = Me.Database1DataSet
-        Me.BindingSource1.Position = 0
-        '
-        'IdcheckDataGridViewTextBoxColumn
-        '
-        Me.IdcheckDataGridViewTextBoxColumn.DataPropertyName = "idcheck"
-        Me.IdcheckDataGridViewTextBoxColumn.HeaderText = "idcheck"
-        Me.IdcheckDataGridViewTextBoxColumn.Name = "IdcheckDataGridViewTextBoxColumn"
-        '
-        'FullnameDataGridViewTextBoxColumn
-        '
-        Me.FullnameDataGridViewTextBoxColumn.DataPropertyName = "full_name"
-        Me.FullnameDataGridViewTextBoxColumn.HeaderText = "full_name"
-        Me.FullnameDataGridViewTextBoxColumn.Name = "FullnameDataGridViewTextBoxColumn"
-        '
-        'AttendDataGridViewTextBoxColumn
-        '
-        Me.AttendDataGridViewTextBoxColumn.DataPropertyName = "attend"
-        Me.AttendDataGridViewTextBoxColumn.HeaderText = "attend"
-        Me.AttendDataGridViewTextBoxColumn.Name = "AttendDataGridViewTextBoxColumn"
         '
         'Form5
         '
@@ -167,10 +167,10 @@ Partial Class Form5
         Me.Name = "Form5"
         Me.Text = "Form5"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Database1DataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -30,6 +30,7 @@ Partial Class Form2
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.TableTableAdapter1 = New TestingLogOn.Database1DataSetTableAdapters.TableTableAdapter()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -112,6 +113,10 @@ Partial Class Form2
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
+        'TableTableAdapter1
+        '
+        Me.TableTableAdapter1.ClearBeforeFill = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -146,4 +151,5 @@ Partial Class Form2
     Friend WithEvents Label2 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents TableTableAdapter1 As Database1DataSetTableAdapters.TableTableAdapter
 End Class

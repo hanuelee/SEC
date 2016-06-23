@@ -15,9 +15,15 @@
         Me.Hide()
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If Not TableTableAdapter.Delete1(TextBox1.Text, TextBox1.Text) = Nothing Then
             MsgBox("User Deleted!", MsgBoxStyle.Information, "Deleted")
+            TextBox1.Clear()
         End If
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        TableTableAdapter.Clear()
+    End Sub
+
 End Class

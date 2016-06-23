@@ -8,14 +8,26 @@
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        TextBox1.Clear()
+        TextBox2.Clear()
         Me.Hide()
         Form1.Show()
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        If Not TableTableAdapter1.CreateAccount(TextBox1.Text, TextBox2.Text) = Nothing Then
+            MsgBox("Account Created!", MsgBoxStyle.Information, "Success")
+            TableTableAdapter1.Attend(TextBox1.Text, TextBox2.Text)
+            Form1.Show()
+            Me.Close()
+        Else
+            Me.Hide()
+            Form4.Show()
+            Threading.Thread.Sleep(1000)
+            Form4.Close()
+            Me.Show()
+        End If
         TextBox1.Clear()
         TextBox2.Clear()
-        Me.Hide()
-        Form1.Show()
     End Sub
 End Class
