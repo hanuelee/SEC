@@ -18,9 +18,6 @@
             Else
                 Me.Hide()
                 Form7.Show()
-                Threading.Thread.Sleep(1000)
-                Form7.Close()
-                Form2.Show()
             End If
         End If
         TextBox1.Clear()
