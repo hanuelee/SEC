@@ -9,7 +9,7 @@
             Form4.Close()
             Me.Show()
         Else
-            If Not TableTableAdapter1.Login(TextBox1.Text, TextBox1.Text) = Nothing Then
+            If Not TableTableAdapter1.Attend(TextBox1.Text, TextBox1.Text) = Nothing Then
                 Me.Hide()
                 Form3.Show()
                 Threading.Thread.Sleep(1000)
@@ -31,7 +31,4 @@
         Form5.Show()
     End Sub
 
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
-
-    End Sub
 End Class

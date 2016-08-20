@@ -15,7 +15,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If Not TableTableAdapter1.CreateAccount(TextBox1.Text, TextBox2.Text) = Nothing Then
+        If Not TableTableAdapter1.CreateAccount(TextBox1.Text, TextBox2.Text, "X") = Nothing Then
             MsgBox("Account Created!", MsgBoxStyle.Information, "Success")
             TableTableAdapter1.Attend(TextBox1.Text, TextBox2.Text)
             Form1.Show()
@@ -29,5 +29,9 @@
         End If
         TextBox1.Clear()
         TextBox2.Clear()
+    End Sub
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

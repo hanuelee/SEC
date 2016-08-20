@@ -166,6 +166,7 @@ Partial Class Form5
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "Form5"
         Me.Text = "Form5"
+        Me.TopMost = True
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).EndInit()

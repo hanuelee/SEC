@@ -47,7 +47,7 @@ Partial Class Form1
         '
         Me.TextBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextBox1.Location = New System.Drawing.Point(49, 439)
+        Me.TextBox1.Location = New System.Drawing.Point(43, 439)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(944, 38)
         Me.TextBox1.TabIndex = 0

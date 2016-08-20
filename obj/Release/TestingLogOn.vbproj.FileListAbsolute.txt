@@ -15,3 +15,4 @@ C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Release\TestingLogOn.vbproj.Genera
 C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Release\TestingLogOn.exe
 C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Release\TestingLogOn.xml
 C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Release\TestingLogOn.pdb
+C:\Users\Ryan\SkyDrive\SigEp\TestingLogOn\obj\Release\TestingLogOn.vbprojResolveAssemblyReference.cache
