@@ -2,14 +2,20 @@
 
     Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
 
-        If TextBox1.Text = (";E?") Then
-            Me.Hide()
-            Form4.Show()
-            Threading.Thread.Sleep(1000)
-            Form4.Close()
-            Me.Show()
-        Else
-            If Not TableTableAdapter1.Attend(TextBox1.Text, TextBox1.Text) = Nothing Then
+        Dim testCheck As Boolean
+        Dim test2Check As Boolean
+
+        testCheck = TextBox1.Text Like "*#########*"
+        test2Check = TextBox1.Text Like "* *"
+
+
+
+        If (testCheck Or test2Check) Then
+
+            Dim literal As String = TextBox1.Text
+            Dim substring As String = literal.Substring(1, 9)
+
+            If Not TableTableAdapter1.Attend(substring, TextBox1.Text) = Nothing Then
                 Me.Hide()
                 Form3.Show()
                 Threading.Thread.Sleep(1000)
@@ -19,6 +25,14 @@
                 Me.Hide()
                 Form7.Show()
             End If
+
+        Else
+            Me.Hide()
+                Form4.Show()
+                Threading.Thread.Sleep(1000)
+                Form4.Close()
+                Me.Show()
+
         End If
         TextBox1.Clear()
     End Sub

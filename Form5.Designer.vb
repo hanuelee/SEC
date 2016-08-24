@@ -25,9 +25,6 @@ Partial Class Form5
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form5))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.IdcheckDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.FullnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.AttendDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Database1DataSet = New TestingLogOn.Database1DataSet()
@@ -38,6 +35,9 @@ Partial Class Form5
         Me.Button4 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.TableTableAdapter = New TestingLogOn.Database1DataSetTableAdapters.TableTableAdapter()
+        Me.IdcheckDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.FullnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.AttendDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -53,27 +53,10 @@ Partial Class Form5
         Me.DataGridView1.DataSource = Me.TableBindingSource
         Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Left
         Me.DataGridView1.Location = New System.Drawing.Point(0, 0)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(345, 491)
+        Me.DataGridView1.Size = New System.Drawing.Size(518, 755)
         Me.DataGridView1.TabIndex = 0
-        '
-        'IdcheckDataGridViewTextBoxColumn
-        '
-        Me.IdcheckDataGridViewTextBoxColumn.DataPropertyName = "idcheck"
-        Me.IdcheckDataGridViewTextBoxColumn.HeaderText = "idcheck"
-        Me.IdcheckDataGridViewTextBoxColumn.Name = "IdcheckDataGridViewTextBoxColumn"
-        '
-        'FullnameDataGridViewTextBoxColumn
-        '
-        Me.FullnameDataGridViewTextBoxColumn.DataPropertyName = "full_name"
-        Me.FullnameDataGridViewTextBoxColumn.HeaderText = "full_name"
-        Me.FullnameDataGridViewTextBoxColumn.Name = "FullnameDataGridViewTextBoxColumn"
-        '
-        'AttendDataGridViewTextBoxColumn
-        '
-        Me.AttendDataGridViewTextBoxColumn.DataPropertyName = "attend"
-        Me.AttendDataGridViewTextBoxColumn.HeaderText = "attend"
-        Me.AttendDataGridViewTextBoxColumn.Name = "AttendDataGridViewTextBoxColumn"
         '
         'TableBindingSource
         '
@@ -93,9 +76,10 @@ Partial Class Form5
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
-        Me.Button3.Location = New System.Drawing.Point(384, 53)
+        Me.Button3.Location = New System.Drawing.Point(576, 82)
+        Me.Button3.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(245, 44)
+        Me.Button3.Size = New System.Drawing.Size(368, 68)
         Me.Button3.TabIndex = 9
         Me.Button3.Text = "Refresh"
         Me.Button3.UseVisualStyleBackColor = True
@@ -103,9 +87,10 @@ Partial Class Form5
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
-        Me.Button2.Location = New System.Drawing.Point(425, 358)
+        Me.Button2.Location = New System.Drawing.Point(638, 551)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(137, 44)
+        Me.Button2.Size = New System.Drawing.Size(206, 68)
         Me.Button2.TabIndex = 8
         Me.Button2.Text = "Remove"
         Me.Button2.UseVisualStyleBackColor = True
@@ -113,18 +98,20 @@ Partial Class Form5
         'TextBox1
         '
         Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.TextBox1.Location = New System.Drawing.Point(383, 326)
+        Me.TextBox1.Location = New System.Drawing.Point(574, 502)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(246, 26)
+        Me.TextBox1.Size = New System.Drawing.Size(367, 35)
         Me.TextBox1.TabIndex = 7
         Me.TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
-        Me.Button1.Location = New System.Drawing.Point(518, 435)
+        Me.Button1.Location = New System.Drawing.Point(777, 669)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(111, 44)
+        Me.Button1.Size = New System.Drawing.Size(166, 68)
         Me.Button1.TabIndex = 6
         Me.Button1.Text = "Back"
         Me.Button1.UseVisualStyleBackColor = True
@@ -132,9 +119,10 @@ Partial Class Form5
         'Button4
         '
         Me.Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.0!)
-        Me.Button4.Location = New System.Drawing.Point(384, 103)
+        Me.Button4.Location = New System.Drawing.Point(576, 158)
+        Me.Button4.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(245, 44)
+        Me.Button4.Size = New System.Drawing.Size(368, 68)
         Me.Button4.TabIndex = 10
         Me.Button4.Text = "Clear Attendance"
         Me.Button4.UseVisualStyleBackColor = True
@@ -142,9 +130,10 @@ Partial Class Form5
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(383, 185)
+        Me.PictureBox1.Location = New System.Drawing.Point(574, 285)
+        Me.PictureBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(246, 119)
+        Me.PictureBox1.Size = New System.Drawing.Size(369, 183)
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
@@ -152,11 +141,30 @@ Partial Class Form5
         '
         Me.TableTableAdapter.ClearBeforeFill = True
         '
+        'IdcheckDataGridViewTextBoxColumn
+        '
+        Me.IdcheckDataGridViewTextBoxColumn.DataPropertyName = "idcheck"
+        Me.IdcheckDataGridViewTextBoxColumn.HeaderText = "idcheck"
+        Me.IdcheckDataGridViewTextBoxColumn.Name = "IdcheckDataGridViewTextBoxColumn"
+        Me.IdcheckDataGridViewTextBoxColumn.Visible = False
+        '
+        'FullnameDataGridViewTextBoxColumn
+        '
+        Me.FullnameDataGridViewTextBoxColumn.DataPropertyName = "full_name"
+        Me.FullnameDataGridViewTextBoxColumn.HeaderText = "full_name"
+        Me.FullnameDataGridViewTextBoxColumn.Name = "FullnameDataGridViewTextBoxColumn"
+        '
+        'AttendDataGridViewTextBoxColumn
+        '
+        Me.AttendDataGridViewTextBoxColumn.DataPropertyName = "attend"
+        Me.AttendDataGridViewTextBoxColumn.HeaderText = "attend"
+        Me.AttendDataGridViewTextBoxColumn.Name = "AttendDataGridViewTextBoxColumn"
+        '
         'Form5
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(641, 491)
+        Me.ClientSize = New System.Drawing.Size(962, 755)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
@@ -164,6 +172,7 @@ Partial Class Form5
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.DataGridView1)
+        Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "Form5"
         Me.Text = "Form5"
         Me.TopMost = True
