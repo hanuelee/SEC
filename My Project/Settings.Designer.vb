@@ -57,11 +57,22 @@ Namespace My
         <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf"& _ 
-            ";Integrated Security=True")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=SQL5019.SmarterASP.NET;Initial Catalog=DB_A0A72F_SEC;User Id=DB_A0A72"& _ 
+            "F_SEC_admin;Password=1234ABc#;")>  _
         Public ReadOnly Property Database1ConnectionString() As String
             Get
                 Return CType(Me("Database1ConnectionString"),String)
+            End Get
+        End Property
+        
+        <Global.System.Configuration.ApplicationScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.SpecialSettingAttribute(Global.System.Configuration.SpecialSetting.ConnectionString),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("Data Source=SQL5019.SmarterASP.NET;Persist Security Info=True;User ID=DB_A0A72F_S"& _ 
+            "EC_admin;Password=1234ABc#")>  _
+        Public ReadOnly Property ConnectionString() As String
+            Get
+                Return CType(Me("ConnectionString"),String)
             End Get
         End Property
     End Class

@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="TestingLogOn.exe" version="1.0.0.1" publicKeyToken="56d5d8bdb6e9eeaf" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="TestingLogOn" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="TestingLogOn.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TestingLogOn.exe" size="164840">
+      <assemblyIdentity name="TestingLogOn" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ei1Q3rIGBveFMaecT/iJRWhd8r/qjJPmvcUY7es5N8I=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Database1.mdf" size="3276800" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pq64s5rKwHpr8IudN7/wY0/rnwPexvkxC2XIgKJFEJY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Database1_log.ldf" size="851968" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>M5G8c5uBEmFSFss6UCdB8vnXWV4t3qzTjukc0Ma0ebw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="TestingLogOn.exe.config" size="569">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tw/XZBoKIcP5DfJ/uvDOC1B0xaAndP23Ody/xmx3/J0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=RYANSURFACE\RyanMuller" issuerKeyHash="f837bbedacccecbc26430ab4b823c4a72041a293" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>wmsPYjLjUIEel2uwgcR68MAzM89HOKfpkdYYoOzYz+8=</DigestValue></Reference></SignedInfo><SignatureValue>RDWpvBjZhkwDlCRv9+k2g3RfW/G9EdpDlrX1WndtIOodGRsHkmZ4IprcB3HgFFDUIUaC09Z8+R5M6Z2ESUNZavWoLCRzpmQBkt1c9vpggRRuaFE9oYdZkmopb7jmSfsD6pY19d9XR+tiSOLH6vD8jXAC1orrax0KqVDHoyn0hpw=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qdjU7ewQGe2kZcc1oylf6R+7rKHP1JscqiXTS6cXb1JdRmAPbNd/p1bIVm5O4gR3Hah74XO85l58otgdMgGF0GkPzFuafQZtYhRR0D7OnBP8+Fx7b5lbhgoTshEPB+yEBcUXcqD6AWskY8zdq1bJDJgOMvnA+cTT3puTY1NgyEM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="efcfd8eca018d691e9a73847cf3333c0f07ac481b06b971e8150e332620f6bc2" Description="" Url=""><as:assemblyIdentity name="TestingLogOn.exe" version="1.0.0.1" publicKeyToken="56d5d8bdb6e9eeaf" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RYANSURFACE\RyanMuller</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>KsgB+25bMbR9solGANsBrQrCG9Z7lEbTNv7qnpnylB4=</DigestValue></Reference></SignedInfo><SignatureValue>HR1n65oJsh6aMBjsfA9PmpqRvM/CgyVyJFzy5NXlXHdFvVGchapU6N5Mk1ARy5qR8aQhELTHYuvymudu4rDtQDuV5Et/kic8cnWoFV/L4xI5xL7Mv6bbEQiK6Iv2NUEPH8+LsUBVs0UotaM3F0TYwjRD1koj4JMvnC5hpiyodDI=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qdjU7ewQGe2kZcc1oylf6R+7rKHP1JscqiXTS6cXb1JdRmAPbNd/p1bIVm5O4gR3Hah74XO85l58otgdMgGF0GkPzFuafQZtYhRR0D7OnBP8+Fx7b5lbhgoTshEPB+yEBcUXcqD6AWskY8zdq1bJDJgOMvnA+cTT3puTY1NgyEM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB8TCCAVqgAwIBAgIQYd3y3zKdzL5Oys2Z3oLRNTANBgkqhkiG9w0BAQsFADA3MTUwMwYDVQQDHiwAUgBZAEEATgBTAFUAUgBGAEEAQwBFAFwAUgB5AGEAbgBNAHUAbABsAGUAcjAeFw0xNjA4MjkyMDEzMTNaFw0xNzA4MzAwMjEzMTNaMDcxNTAzBgNVBAMeLABSAFkAQQBOAFMAVQBSAEYAQQBDAEUAXABSAHkAYQBuAE0AdQBsAGwAZQByMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCp2NTt7BAZ7aRlxzWjKV/pH7usoc/UmxyqJdNLpxdvUl1GYA9s13+nVshWbk7iBHcdqHvhc7zmXnyi2B0yAYXQaQ/MW5p9Bm1iFFHQPs6cE/z4XHtvmVuGChOyEQ8H7IQFxRdyoPoBayRjzN2rVskMmA4y+cD5xNPem5NjU2DIQwIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAFKj81JfU69/yk6pYYzMd1zroO8lOt4hjqaH3sCcJEGMUp5b2HcpmGcCiE49i4cN+Cumusn6bKA6z3IXsHVoz2zDzy/iiNO5i1gscicOg8nSgkuqBJ7lXyRoh+8FZpjXbTUymuUkOdTJFz7REwBt606Lu4QyDCJN17CJDI7MlJ7O</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

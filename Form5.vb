@@ -1,7 +1,7 @@
 ﻿Public Class Form5
     Private Sub Form5_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'TODO: This line of code loads data into the 'Database1DataSet.Table' table. You can move, or remove it, as needed.
-        Me.TableTableAdapter.Fill(Me.Database1DataSet.Table)
+        'TODO: This line of code loads data into the 'DataSet1.Table' table. You can move, or remove it, as needed.
+        Me.TableTableAdapter1.Fill(Me.DataSet1.Table)
 
     End Sub
 

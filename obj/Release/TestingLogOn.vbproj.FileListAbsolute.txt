@@ -34,3 +34,8 @@ C:\Users\RyanMuller\OneDrive\SigEp\SigninCode\HokieP\obj\Release\TestingLogOn.Fo
 C:\Users\RyanMuller\OneDrive\SigEp\SigninCode\HokieP\obj\Release\TestingLogOn.Form7.resources
 C:\Users\RyanMuller\OneDrive\SigEp\SigninCode\HokieP\obj\Release\TestingLogOn.Resources.resources
 C:\Users\RyanMuller\OneDrive\SigEp\SigninCode\HokieP\obj\Release\TestingLogOn.vbproj.GenerateResource.Cache
+C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\bin\Release\TestingLogOn.exe.config
+C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\obj\Release\TestingLogOn.exe
+C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\obj\Release\TestingLogOn.xml
+C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\obj\Release\TestingLogOn.pdb
+C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\bin\Release\SEC_Sign_In.exe.config

@@ -22,19 +22,7 @@ Partial Class Form3
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 72.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.Label1.Location = New System.Drawing.Point(115, 135)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(500, 111)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "Success..."
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form3
         '
@@ -42,7 +30,6 @@ Partial Class Form3
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.Lime
         Me.ClientSize = New System.Drawing.Size(716, 412)
-        Me.Controls.Add(Me.Label1)
         Me.ForeColor = System.Drawing.Color.Lime
         Me.MinimumSize = New System.Drawing.Size(732, 450)
         Me.Name = "Form3"
@@ -53,6 +40,4 @@ Partial Class Form3
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents Label1 As Label
 End Class

@@ -15,7 +15,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If Not TableTableAdapter1.CreateAccount(TextBox1.Text, TextBox2.Text, "X") = Nothing Then
+        If Not TableTableAdapter1.CreateAccount(TextBox1.Text, TextBox2.Text, "X", ComboBox2.SelectedText, ComboBox1.SelectedText, TextBox5.Text) = Nothing Then
             MsgBox("Account Created!", MsgBoxStyle.Information, "Success")
             TableTableAdapter1.Attend(TextBox1.Text, TextBox2.Text)
             Form1.Show()
@@ -32,6 +32,11 @@
     End Sub
 
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'DataSet1.Year' table. You can move, or remove it, as needed.
+        Me.YearTableAdapter.Fill(Me.DataSet1.Year)
+        'TODO: This line of code loads data into the 'DataSet1.Org' table. You can move, or remove it, as needed.
+        Me.OrgTableAdapter.Fill(Me.DataSet1.Org)
 
     End Sub
+
 End Class
