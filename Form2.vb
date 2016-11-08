@@ -15,7 +15,7 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        If Not TableTableAdapter1.CreateAccount(TextBox1.Text, TextBox2.Text, "X", ComboBox2.SelectedText, ComboBox1.SelectedText, TextBox5.Text) = Nothing Then
+        If Not TableTableAdapter1.CreateAccount(TextBox1.Text, TextBox2.Text, "X", ComboBox2.SelectedValue.ToString, ComboBox1.SelectedValue.ToString, TextBox5.Text) = Nothing Then
             MsgBox("Account Created!", MsgBoxStyle.Information, "Success")
             TableTableAdapter1.Attend(TextBox1.Text, TextBox2.Text)
             Form1.Show()

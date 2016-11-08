@@ -32,7 +32,7 @@ Partial Class Form5
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.TableTableAdapter = New TestingLogOn.Database1DataSetTableAdapters.TableTableAdapter()
+        Me.TableTableAdapter = New TestingLogOn.DataSet1TableAdapters.TableTableAdapter()
         Me.TableTableAdapter1 = New TestingLogOn.DataSet1TableAdapters.TableTableAdapter()
         Me.FullnameDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.email = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -180,7 +180,7 @@ Partial Class Form5
 
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents TableBindingSource As BindingSource
-    Friend WithEvents TableTableAdapter As Database1DataSetTableAdapters.TableTableAdapter
+    Friend WithEvents TableTableAdapter As DataSet1TableAdapters.TableTableAdapter
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents TextBox1 As TextBox

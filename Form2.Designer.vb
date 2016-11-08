@@ -42,7 +42,7 @@ Partial Class Form2
         Me.OrgTableAdapter = New TestingLogOn.DataSet1TableAdapters.OrgTableAdapter()
         Me.OrgBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.YearTableAdapter = New TestingLogOn.DataSet1TableAdapters.YearTableAdapter()
-        Me.TableTableAdapter1 = New TestingLogOn.Database1DataSetTableAdapters.TableTableAdapter()
+        Me.TableTableAdapter1 = New TestingLogOn.DataSet1TableAdapters.TableTableAdapter()
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me.YearBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataSet1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -164,6 +164,8 @@ Partial Class Form2
         '
         'ComboBox1
         '
+        Me.ComboBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.ComboBox1.DataSource = Me.YearBindingSource
         Me.ComboBox1.DisplayMember = "YearName"
         Me.ComboBox1.FormattingEnabled = True
@@ -171,6 +173,7 @@ Partial Class Form2
         Me.ComboBox1.Name = "ComboBox1"
         Me.ComboBox1.Size = New System.Drawing.Size(591, 39)
         Me.ComboBox1.TabIndex = 13
+        Me.ComboBox1.ValueMember = "YearName"
         '
         'YearBindingSource
         '
@@ -189,6 +192,10 @@ Partial Class Form2
         '
         'ComboBox2
         '
+        Me.ComboBox2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ComboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend
+        Me.ComboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems
         Me.ComboBox2.DataSource = Me.OrgBindingSource
         Me.ComboBox2.DisplayMember = "Name"
         Me.ComboBox2.FormattingEnabled = True
@@ -196,6 +203,7 @@ Partial Class Form2
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(591, 39)
         Me.ComboBox2.TabIndex = 14
+        Me.ComboBox2.ValueMember = "Name"
         '
         'OrgBindingSource
         '
@@ -274,6 +282,6 @@ Partial Class Form2
     Friend WithEvents OrgBindingSource1 As BindingSource
     Friend WithEvents YearBindingSource As BindingSource
     Friend WithEvents YearTableAdapter As DataSet1TableAdapters.YearTableAdapter
-    Friend WithEvents TableTableAdapter1 As Database1DataSetTableAdapters.TableTableAdapter
+    Friend WithEvents TableTableAdapter1 As DataSet1TableAdapters.TableTableAdapter
     Friend WithEvents BindingSource1 As BindingSource
 End Class

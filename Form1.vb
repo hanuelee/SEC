@@ -13,7 +13,15 @@
         If (testCheck Or test2Check) Then
 
             Dim literal As String = TextBox1.Text
-            Dim substring As String = literal.Substring(1, 9)
+            Dim substring As String
+
+            If (testCheck) Then
+                substring = literal.Substring(1, 9)
+
+            Else
+                substring = literal
+
+            End If
 
             If Not TableTableAdapter1.Attend(substring, TextBox1.Text) = Nothing Then
                 Me.Hide()
@@ -28,10 +36,10 @@
 
         Else
             Me.Hide()
-                Form4.Show()
-                Threading.Thread.Sleep(1000)
-                Form4.Close()
-                Me.Show()
+            Form4.Show()
+            Threading.Thread.Sleep(1000)
+            Form4.Close()
+            Me.Show()
 
         End If
         TextBox1.Clear()

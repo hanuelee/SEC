@@ -6,3 +6,9 @@ Namespace DataSet1TableAdapters
     Partial Public Class TableTableAdapter
     End Class
 End Namespace
+
+Namespace TestingLogOn.DataSet1TableAdapters
+
+    Partial Public Class TableTableAdapter
+    End Class
+End Namespace

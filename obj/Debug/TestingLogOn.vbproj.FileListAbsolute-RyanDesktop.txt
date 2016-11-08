@@ -72,11 +72,3 @@ C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\obj\Debug\TestingLogOn.vbproj.Gener
 C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\obj\Debug\SEC_Sign_In.exe
 C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\obj\Debug\SEC_Sign_In.xml
 C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\obj\Debug\SEC_Sign_In.pdb
-C:\Users\RyanMuller\OneDrive\SEC\SigninCode\HokieP\bin\Debug\SEC_Sign_In.exe.config
-C:\Users\RyanMuller\OneDrive\SEC\SigninCode\HokieP\obj\Debug\SEC_Sign_In.exe
-C:\Users\RyanMuller\OneDrive\SEC\SigninCode\HokieP\obj\Debug\SEC_Sign_In.xml
-C:\Users\RyanMuller\OneDrive\SEC\SigninCode\HokieP\obj\Debug\SEC_Sign_In.pdb
-C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\bin\Debug\SEC_Sign_In.exe.manifest
-C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\bin\Debug\SEC_Sign_In.application
-C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\obj\Debug\SEC_Sign_In.exe.manifest
-C:\Users\Ryan\SkyDrive\SEC\SigninCode\HokieP\obj\Debug\SEC_Sign_In.application

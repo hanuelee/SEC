@@ -1,0 +1,136 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SEC_Sign_In
+</name>
+</assembly>
+<members>
+<member name="T:TestingLogOn.DataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1.OrgDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1.TableDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1.YearDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1.OrgRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1.TableRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1.YearRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1.OrgRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1.TableRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1.YearRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1TableAdapters.OrgTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1TableAdapters.TableTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1TableAdapters.YearTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:TestingLogOn.DataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(TestingLogOn.DataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:TestingLogOn.DataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(TestingLogOn.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:TestingLogOn.DataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(TestingLogOn.DataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:TestingLogOn.DataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:TestingLogOn.DataSet1TableAdapters.TableAdapterManager.UpdateAll(TestingLogOn.DataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:TestingLogOn.DataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:TestingLogOn.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:TestingLogOn.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:TestingLogOn.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:TestingLogOn.My.Resources.Resources.Testing">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+</members>
+</doc>
